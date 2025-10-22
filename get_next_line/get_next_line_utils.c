@@ -6,14 +6,13 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 21:22:41 by pedromig          #+#    #+#             */
-/*   Updated: 2025/04/30 17:57:58 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/22 23:22:54 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-void	ft_ultimate_initializer(int *bytes_read,
-		int *nl_check, char **return_str)
+void	ft_init_vars(int *bytes_read, int *nl_check, char **return_str)
 {
 	*bytes_read = 0;
 	*nl_check = 0;

@@ -6,7 +6,7 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/01 22:54:48 by pedromig          #+#    #+#             */
-/*   Updated: 2025/05/18 21:02:34 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/22 23:17:57 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_PRINTF_H
 
 # include "libft/libft.h"
+# include "stdarg.h"
 
 int		ft_printf(const char *str, ...);
 int		condition_check(char c, va_list args);

@@ -6,7 +6,7 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 20:40:37 by pedromig          #+#    #+#             */
-/*   Updated: 2025/06/08 17:33:55 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/22 23:22:36 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*get_next_line(int fd)
 
 	if (BUFFER_SIZE <= 0 || fd < 0)
 		return (NULL);
-	ft_ultimate_initializer(&bytes_read, &nl_check, &return_str);
+	ft_init_vars(&bytes_read, &nl_check, &return_str);
 	while (!nl_check)
 	{
 		if (!buf[0])

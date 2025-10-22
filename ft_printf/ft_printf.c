@@ -6,7 +6,7 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/22 19:29:41 by pedromig          #+#    #+#             */
-/*   Updated: 2025/05/18 21:28:10 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/22 23:19:43 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,8 @@ int	condition_check(char c, va_list args)
 	return (size);
 }
 
-/*
-int	main(void)
+// To test the function:
+/*int	main(void)
 {
 	int	return_value = 0;
 
@@ -89,5 +89,4 @@ int	main(void)
 
 	printf("Return value of ft_printf: %i (3 more because of 'Ft_')\n"
 		, return_value);	
-}
-*/
+}*/
