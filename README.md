@@ -13,15 +13,17 @@ This repository gathers all the projects I’ve completed so far, reflecting my 
 
 ## 📚 Projects Overview
 
-| Project | Description |
-|----------|-------------|
-| **libft** | Custom implementation of standard C library functions — foundation for later projects. |
-| **get_next_line** | Reads a file line by line using efficient memory management. |
-| **ft_printf** | Recreation of the `printf` function, handling formatted output and variadic arguments. |
-| **born2beroot** | System administration and security setup in a virtualized Linux environment. |
-| **so_long** | A 2D game using MiniLibX graphics — focus on event handling and map parsing. |
-| **push_swap** | Sorting algorithm challenge with stack manipulation and optimization. |
-| **pipex** | Reimplementation of UNIX pipes and process chaining. |
+| Project | Language | Status | Description |
+|---------|---------|--------|-------------|
+| [libft](./libft) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Custom implementation of standard C library functions — foundation for future projects. |
+| [get_next_line](./get_next_line) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Reads a file line by line using static buffers and efficient memory management. |
+| [ft_printf](./ft_printf) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Reimplementation of `printf`, handling formatted output and variadic arguments. |
+| [Born2beroot](./born2beroot) | ![Shell](https://img.shields.io/badge/Language-Shell-yellow) | ✅ Completed | Linux system administration and security setup in a virtual machine. |
+| [so_long](./so_long) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Simple 2D game with event handling and map parsing using MiniLibX. |
+| [minitalk](./minitalk) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Interprocess communication using UNIX signals. |
+| [push_swap](./push_swap) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Stack-based sorting algorithm challenge, emphasizing optimization. |
+| [pipex](./pipex) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Simulates UNIX pipes and process chaining with file descriptors. |
+| [philosophers](./philosophers) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Multithreading exercise solving the Dining Philosophers problem. |
 
 ---
 
