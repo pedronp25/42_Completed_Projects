@@ -6,7 +6,7 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 02:11:07 by pedromig          #+#    #+#             */
-/*   Updated: 2025/10/26 20:02:39 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:32:45 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,23 +33,23 @@ void	sl_xpm_to_image(t_game *sl)
 	int	size;
 
 	sl->img.floor = mlx_xpm_file_to_image(sl->mlx,
-			"96x96_imgs/floor_96_img.xpm", &size, &size);
+			"32x32_imgs/floor_32x32.xpm", &size, &size);
 	if (!sl->img.floor)
 		sl_exit_error(sl, "Error: couldn't create '0' image from xpm file\n");
 	sl->img.wall = mlx_xpm_file_to_image(sl->mlx,
-			"96x96_imgs/wall_96_img.xpm", &size, &size);
+			"32x32_imgs/wall_32x32.xpm", &size, &size);
 	if (!sl->img.wall)
 		sl_exit_error(sl, "Error: couldn't create '1' image from xpm file\n");
 	sl->img.player = mlx_xpm_file_to_image(sl->mlx,
-			"96x96_imgs/cat_96_img.xpm", &size, &size);
+			"32x32_imgs/player_32x32.xpm", &size, &size);
 	if (!sl->img.player)
 		sl_exit_error(sl, "Error: couldn't create 'P' image from xpm file\n");
 	sl->img.collectible = mlx_xpm_file_to_image(sl->mlx,
-			"96x96_imgs/duck_96_img.xpm", &size, &size);
+			"32x32_imgs/collectible_32x32.xpm", &size, &size);
 	if (!sl->img.collectible)
 		sl_exit_error(sl, "Error: couldn't create 'C' image from xpm file\n");
 	sl->img.exit = mlx_xpm_file_to_image(sl->mlx,
-			"96x96_imgs/bed_96_img.xpm", &size, &size);
+			"32x32_imgs/exit_32x32.xpm", &size, &size);
 	if (!sl->img.exit)
 		sl_exit_error(sl, "Error: couldn't create 'E' image from xpm file\n");
 }

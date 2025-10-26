@@ -6,7 +6,7 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/24 03:26:05 by pedromig          #+#    #+#             */
-/*   Updated: 2025/10/13 19:58:31 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/26 21:41:08 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 # define KEY_RIGHT 65363
 # define ESC 65307
 
-# define TILE_SIZE 96
+# define TILE_SIZE 32
 
 typedef struct s_found
 {

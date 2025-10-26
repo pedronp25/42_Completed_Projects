@@ -6,7 +6,7 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/04 02:39:54 by pedromig          #+#    #+#             */
-/*   Updated: 2025/10/26 11:56:34 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/26 22:48:05 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,9 @@ void	sl_exit_success(t_game *sl, int closed)
 	ft_printf("\t\t║   🎉 CONGRATS! 🎉   ║\n");
 	ft_printf("\t\t║                     ║\n");
 	ft_printf("\t\t║  You collected all  ║\n");
-	ft_printf("\t\t║    the items an     ║\n");
-	ft_printf("\t\t║     got to bed!     ║\n");
+	ft_printf("\t\t║    the items and    ║\n");
+	ft_printf("\t\t║      got to the     ║\n");
+	ft_printf("\t\t║       pokeball!     ║\n");
 	ft_printf("\t\t║                     ║\n");
 	ft_printf("\t\t║ Thanks for playing! ║\n");
 	ft_printf("\t\t║                     ║\n");
