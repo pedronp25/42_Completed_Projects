@@ -6,11 +6,10 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/03 02:11:07 by pedromig          #+#    #+#             */
-/*   Updated: 2025/10/13 19:57:17 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/26 20:02:39 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "mlx/mlx.h"
 #include "so_long.h"
 
 void	sl_window(t_game *sl)
@@ -21,10 +20,10 @@ void	sl_window(t_game *sl)
 	sl->win = mlx_new_window(sl->mlx, sl->width * TILE_SIZE,
 			sl->height * TILE_SIZE, "SO_LONG");
 	if (!sl->win)
-		sl_exit_error(sl, "Error: coudln't create window\n");
+		sl_exit_error(sl, "Error: couldn't create window\n");
 	sl_xpm_to_image(sl);
 	sl_draw_map(sl);
-	mlx_key_hook(sl->win, sl_key_press, sl);
+	mlx_hook(sl->win, 02, 1L<<0, sl_key_press, sl);
 	mlx_hook(sl->win, 17, 0, sl_press_cross, sl);
 	mlx_loop(sl->mlx);
 }
@@ -80,9 +79,9 @@ void	sl_draw_tile(t_game *sl, int y, int x)
 
 	img = NULL;
 	tile = sl->map[y][x];
-	mlx_put_image_to_window(sl->mlx, sl->win, sl->img.floor,
-		x * TILE_SIZE, y * TILE_SIZE);
-	if (tile == '1')
+	if (tile == '0')
+		img = sl->img.floor;
+	else if (tile == '1')
 		img = sl->img.wall;
 	else if (tile == 'P')
 		img = sl->img.player;
