@@ -61,20 +61,22 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $(OBJS)
+	clear
 
 clean:
-	$(RM) $(OBJS) $(B_OBJS) meow
+	$(RM) $(OBJS) $(B_OBJS) done
 
 fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
 
-bonus: meow 
+bonus: done
 
-meow: $(B_OBJS) $(OBJS)
+done: $(B_OBJS) $(OBJS)
 	$(AR) $(NAME) $(OBJS) $(B_OBJS)
-	touch meow
+	touch done
+	clear
 
 %.o:%.c
 	$(CC) $(CFLAGS) -c $< -o $@

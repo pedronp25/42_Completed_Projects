@@ -6,7 +6,7 @@
 /*   By: pedromig <pedromig@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/12 16:09:38 by pedromig          #+#    #+#             */
-/*   Updated: 2025/04/14 01:07:58 by pedromig         ###   ########.fr       */
+/*   Updated: 2025/10/27 01:03:01 by pedromig         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	{
 		if (temp[x] == (unsigned char)c)
 		{
-			return ((void *)&s[x]);
+			return ((void *)&temp[x]);
 		}
 		x++;
 	}
