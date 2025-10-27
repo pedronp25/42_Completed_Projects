@@ -1,20 +1,12 @@
 # 42 COMPLETED PROJECTS
 
-```
-  ___   ___   ____  ____   _____       _ _____ ____ _____ ____  
- / _ \ / _ \ |  _ \|  _ \ / _ \ \     / | ____/ ___|_   _/ ___| 
-| | | | | | || |_) | |_) | | | \ \   / /|  _|| |     | | \___ \ 
-| |_| | |_| ||  __/|  _ <| |_| |\ \ / / | |__| |___  | |  ___) |
- \___/ \___/ |_|   |_| \_\\___/  \_V/  |_____\____| |_| |____/ 
-```
-
 <div align="center">
 
-![C](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-![Linux](https://img.shields.io/badge/OS-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Tools-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Make](https://img.shields.io/badge/Build-Make-427819?style=for-the-badge&logo=cmake&logoColor=white)
+![C](https://img.shields.io/badge/Language-C-00599C?logo=c&logoColor=white)
+![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
+![Linux](https://img.shields.io/badge/OS-Linux-FCC624?logo=linux&logoColor=white)
+![Git](https://img.shields.io/badge/Tools-Git-F05032?logo=git&logoColor=white)
+![Make](https://img.shields.io/badge/Build-Make-427819?logo=cmake&logoColor=white)
 
 </div>
 
