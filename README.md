@@ -1,6 +1,9 @@
 <div align="center">
-# 42 COMPLETED PROJECTS
+42 COMPLETED PROJECTS
 
+  # 42 COMPLETED PROJECTS
+
+<div align="center">
 
 ![C](https://img.shields.io/badge/Language-C-00599C?logo=c&logoColor=white)
 ![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnu-bash&logoColor=white)
