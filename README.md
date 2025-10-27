@@ -109,11 +109,13 @@ A function that reads from a file descriptor line by line, returning one line pe
 
 **How to Run:**
 ```bash
+# Uncomment main function inside get_next_line.c
+
 # Compile with your main file
-gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c main.c
+gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.c -o gnl
 
 # Run the executable
-./a.out [test_file.txt]
+./gnl [test_file.txt]
 ```
 
 **Expected Output:**  
@@ -139,15 +141,17 @@ A reimplementation of the standard `printf()` function from libc. This project r
 
 **How to Run:**
 ```bash
+# Uncommment main function inside ft_printf.c
+
 # Compile the library
 make
 
 # This creates libftprintf.a
 # Link it with your test file
-gcc main.c libftprintf.a
+gcc ft_printf.c libftprintf.a -o ft_printf
 
 # Run tests
-./a.out
+./ft_printf
 ```
 
 **Expected Output:**  
@@ -199,35 +203,20 @@ A small 2D game project where the player must collect all collectibles and reach
 First, install MiniLibX:
 ```bash
 # For Linux (42's version)
-git clone https://github.com/42Paris/minilibx-linux.git
-cd minilibx-linux
-make
+git clone https://github.com/42Paris/minilibx-linux.git mlx
 
 # Alternatively, for macOS
-git clone https://github.com/42Paris/minilibx-opengl.git
-cd minilibx-opengl
-make
+git clone https://github.com/42Paris/minilibx-opengl.git mlx
 ```
 
 Then compile so_long:
 ```bash
-# Compile the project (adjust MiniLibX path if needed)
+# Compile the project
 make
 
-# Run with a map file
-./so_long maps/map.ber
-
-# Clean and rebuild
-make fclean
-make
+# Run with any map file (maps/ directory)
+./so_long maps/42_map.ber
 ```
-
-**Expected Output:**  
-A window opens displaying your map with the player, collectibles, walls, and exit. The player should be able to move using WASD or arrow keys, and the move count should be displayed. The game ends when all collectibles are gathered and the exit is reached.
-
-**Testers:**
-- Manual testing with various map configurations
-- [GQDeltex/so_long_tester](https://github.com/GQDeltex/so_long_tester)
 
 ---
 
@@ -254,13 +243,10 @@ make
 
 # The program outputs the operations needed to sort
 # Pipe to checker to verify correctness
-./push_swap 3 2 1 5 4 | ./checker 3 2 1 5 4
+./push_swap 3 2 1 5 4 | ./checker_linux 3 2 1 5 4
 
-# Test with random numbers
-ARG=$(shuf -i 0-100 -n 100 | tr '\n' ' '); ./push_swap $ARG | wc -l
-
-# Clean
-make fclean
+# Use the 'generate_tests.sh' script included
+./generate_tests.sh
 ```
 
 **Expected Output:**  
@@ -299,12 +285,6 @@ make
 
 # Example with grep and wc
 ./pipex input.txt "grep hello" "wc -w" output.txt
-
-# Bonus: handle multiple pipes
-./pipex infile "cmd1" "cmd2" "cmd3" "cmd4" outfile
-
-# Clean
-make fclean
 ```
 
 **Expected Output:**  
