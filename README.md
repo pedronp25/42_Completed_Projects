@@ -22,7 +22,7 @@ At 42 Porto, the learning process is entirely project-based — no teachers, no 
 This repository gathers all the projects I've completed so far, reflecting my progress through the **Common Core**.
 
 ### 🔨 Currently Working On
-**minishell** - Building a minimal bash-like shell from scratch
+**CPP Modules** – Learning Object-Oriented Programming in C++, including classes, inheritance, polymorphism, and deeper language concepts.
 
 ---
 
@@ -36,6 +36,7 @@ This repository gathers all the projects I've completed so far, reflecting my pr
 6. [push_swap](#push_swap)
 7. [pipex](#pipex)
 8. [philosophers](#philosophers)
+9. [minishell](#minishell)
 
 ---
 
@@ -51,6 +52,7 @@ This repository gathers all the projects I've completed so far, reflecting my pr
 | [push_swap](#push_swap) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Stack-based sorting algorithm challenge, emphasizing optimization. |
 | [pipex](#pipex) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Simulates UNIX pipes and process chaining with file descriptors. |
 | [philosophers](#philosophers) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | Multithreading exercise solving the Dining Philosophers problem. |
+| [minishell](#minishell) | ![C](https://img.shields.io/badge/Language-C-blue) | ✅ Completed | A minimal POSIX-like shell implementing pipes, redirections, and builtins. |
 
 ---
 
@@ -291,10 +293,6 @@ make
 **Expected Output:**  
 The output file should contain the result of piping cmd1's output into cmd2, just like in a shell pipeline.
 
-**Testers:**
-- [vfurmane/pipex-tester](https://github.com/vfurmane/pipex-tester)
-- Manual comparison with actual shell behavior
-
 ---
 
 ### philosophers
@@ -347,6 +345,41 @@ Timestamped logs showing each philosopher's actions (taking forks, eating, sleep
 - Algorithmic Thinking  
 - Networking & Multithreading  
 - System Design & Security Basics  
+
+---
+
+---
+
+### minishell
+
+**Description:**  
+A collaborative project to recreate a minimal Bash-like shell. The program interprets user input, parses commands, and executes them while supporting core shell features such as pipes, redirections, environment variables, and built-in commands.
+
+**What I Learned:**
+- Process management with `fork()`, `execve()`, and `waitpid()`
+- File descriptor manipulation and redirections
+- Pipe creation for command chaining
+- Parsing complex user input
+- Handling environment variables
+- Implementing shell built-in commands (`cd`, `echo`, `pwd`, `export`, `unset`, `env`, `exit`)
+- Signal handling (`SIGINT`, `SIGQUIT`)
+- Memory management in large projects
+- Team collaboration on large codebases
+
+**How to Run:**
+```bash
+# Compile
+make
+
+# Launch the shell
+./minishell
+
+**Example Usage**
+
+minishell$ ls -la
+minishell$ echo Hello World
+minishell$ cat file.txt | grep hello
+minishell$ export PATH=/usr/bin
 
 ---
 
