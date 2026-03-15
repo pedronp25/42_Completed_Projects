@@ -147,7 +147,7 @@ A system administration project where you set up a secure virtual machine from s
 
 ---
 
-### so_long
+### 📦 so_long
 
 **Description:**
 A small 2D game project where the player must collect all collectibles and reach the exit. Built using the MiniLibX graphics library, introducing graphical programming and event handling.
