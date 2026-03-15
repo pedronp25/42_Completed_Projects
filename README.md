@@ -58,7 +58,7 @@ This repository gathers all the projects I've completed so far, reflecting my pr
 
 ## 📖 Projects
 
-### libft
+### 📦 libft
 
 **Description:**
 The first project at 42, libft requires you to recreate essential functions from the C standard library (libc) from scratch. This library becomes the foundation for all future C projects at 42. Functions include string manipulation, memory management, character checks, and linked list operations.
@@ -86,7 +86,7 @@ A static library file `libft.a` containing all implemented functions, ready to b
 
 ---
 
-### get_next_line
+### 📦 get_next_line
 
 **Description:**
 A function that reads from a file descriptor line by line, returning one line per call. The challenge involves managing static variables to maintain state between function calls and handling different buffer sizes efficiently.
@@ -108,7 +108,7 @@ gcc -Wall -Wextra -Werror -D BUFFER_SIZE=42 get_next_line.c get_next_line_utils.
 
 ---
 
-### ft_printf
+### 📦 ft_printf
 
 **Description:**
 A reimplementation of the standard `printf()` function from libc. This project requires handling variadic arguments and implementing various format specifiers like `%c`, `%s`, `%p`, `%d`, `%i`, `%u`, `%x`, `%X`, and `%%`.
@@ -131,7 +131,7 @@ gcc ft_printf.c libftprintf.a -o ft_printf
 
 ---
 
-### born2beroot
+### 📦 born2beroot
 
 **Description:**
 A system administration project where you set up a secure virtual machine from scratch. Tasks include installing a minimal Linux system, configuring SSH, implementing password policies, and setting up monitoring scripts.
@@ -169,7 +169,7 @@ make
 
 ---
 
-### push_swap
+### 📦 push_swap
 
 **Description:**
 An algorithm project that challenges you to sort a stack of integers using only two stacks and a limited set of operations.
@@ -191,7 +191,7 @@ make
 
 ---
 
-### pipex
+### 📦 pipex
 
 **Description:**
 A project that mimics the behavior of shell pipes. The program takes an input file, executes commands, and redirects output similar to a shell pipeline.
@@ -213,7 +213,7 @@ make
 
 ---
 
-### philosophers
+### 📦 philosophers
 
 **Description:**
 An implementation of the classic Dining Philosophers problem using threads and mutexes. Philosophers alternate between eating, thinking, and sleeping while sharing resources.
@@ -236,7 +236,7 @@ make
 
 ---
 
-### minishell
+### 📦 minishell
 
 **Description:**
 A collaborative project where we recreated a simplified version of the Bash shell. The program reads user input, parses commands, and executes them while supporting several essential shell features.
